@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ######################################## */
+/* ####### COMMON HTML-CSS SELECTOR ####### */
+/* ######################################## */
+body {
+    background-color: tomato;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+/* ################################ */
+/* ####### GENERAL SELECTOR ####### */
+/* ################################ */
+.none_list {
+    list-style: none;
+}
+[class*="none_list"] li {
+    display: inline-block;
+}
+[class*="none_list"] li > a {
+    text-decoration: none;
+}
+
+.none_link {
+    text-decoration: none;
+}
+
+.bttn_light {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #2285fd;
+    color: #2285fd;
+}
+.bttn_light:hover {
+    background-color: #2285fd;
+    color: white;
+}
+/* ############################### */
+/* ####### HEADER SELECTOR ####### */
+/* ############################### */
+header > nav {
+    background-color: white;
+    height: 60px;
+}
+
+nav > div {
+    height: 100%;
+}
+
+#logo_nav {
+    height: 30px;
+}
+
+nav ul a {
+    color: #102756;
+}
+
+nav ul li {
+    margin: 0px 10px;
+}
