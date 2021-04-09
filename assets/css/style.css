@@ -65,3 +65,50 @@ nav ul a {
 nav ul li {
     margin: 0px 10px;
 }
+
+#bars_menu {
+    display: none;
+}
+
+
+/* ############################## */
+/* ####### RESPONSIVE CSS ####### */
+/* ############################## */
+
+/* ##### S - SMARPHONE ##### */
+@media all and (max-width: 767px) {
+    .widthed_page {
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .none_menu > ul {
+        display: none;
+    }
+
+    #bars_menu {
+        display: inline-block;
+        color: #2285fd;
+        font-size: 1.5rem;
+    }
+}
+
+/* ##### M - TABLET ##### */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .widthed_page {
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .none_menu > ul {
+        display: none;
+    }
+
+    #bars_menu {
+        display: inline-block;
+        color: #2285fd;
+        font-size: 1.5rem;
+    }
+}
