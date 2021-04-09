@@ -1,6 +1,7 @@
 .widthed_page {
     max-width: 1170px;
     margin: 0 auto;
+    height: 100%;
 }
 
 /*##### DEBUG ZONE ##### */
@@ -29,6 +30,20 @@
 /* ##### FLEX RESPONSIVE ##### */
 .flex {
     display: flex;
+    flex-direction: row;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.flex_between {
+    justify-content: space-between;
 }
 
 .vcenter {
@@ -37,6 +52,13 @@
 
 .hcenter {
     justify-content: center;
+}
+.hright {
+    justify-content: end;
+}
+
+.fgrow_50 {
+    flex: 50%
 }
 
 .fgrow_1 {
@@ -217,7 +239,7 @@
 /* ###################### */
 /* ##### L - LAPTOP ##### */
 /* ###################### */
-@media all and (max-width: 992px) {
+@media all and (min-width: 992px) {
     .col-L1 {
         width: calc((100% / 12) * 1);
     }
