@@ -256,6 +256,30 @@
     .off-M11 {
         margin-left: calc((100% / 12) * 11);
     }
+
+    .flex_M {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex_col_M {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex_row_M {
+        flex-direction: row;
+    }
+    .flex_between_M {
+        justify-content: space-between;
+    }
+    .flex_wrap_M {
+        flex-wrap: wrap;
+    }
+    .vcenter_M {
+        align-items: center;
+    }
+    .hcenter_M {
+        justify-content: center;
+    }
 }
 
 
