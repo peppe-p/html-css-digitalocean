@@ -48,6 +48,13 @@ a {
     flex-basis: 35%
 }
 
+.bttn_google {
+    background-image: url("../img/google-icon.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;
+}
+
 .bttn_light {
     padding: 6px 12px;
     border-radius: 4px;
@@ -133,38 +140,44 @@ nav ul li:last-child {
 /* ####### HERO SELECTOR ####### */
 /* ############################# */
 #hero {
-    height: 450px;
+    height: auto;
     background-image: url("../img/bg-banner-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 60px 0px;
 }
 
 .hero_left {
     color: white;
     height: auto;
+    width: 55%;
+    padding-right: 50px;
 }
 .hero_left h1 {
     font-size: 3.5rem;
     line-height: 3.8rem;
     margin-bottom: 1rem;
+    padding-right: 20px;
 }
 .hero_left p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     opacity: 0.75;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .hero_right {
-    height: 100%;
+    height: auto;
+    width: 45%;
+    padding-left: 100px;
 }
 
 .hero_form {
     height: auto;
-    width: 70%;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 .hero_form h2:first-child {
     color: #0d2b66;
@@ -174,7 +187,10 @@ nav ul li:last-child {
     color: #2285fd;
     margin: 5px 0px;
 }
-
+.hero_form h5 {
+    margin-top: 15px;
+    font-size: 0.75rem;
+}
 
 
 /* ################################## */
@@ -182,7 +198,10 @@ nav ul li:last-child {
 /* ################################## */
 #customers {
     background-color: #f3f5f9;
-    height: 230px;
+    height: auto;
+}
+#customers > div {
+    padding: 20px 0px;
 }
 #customers h3 {
     color: #737f9a;
@@ -191,6 +210,9 @@ nav ul li:last-child {
 #customers a {
     font-size: 0.8rem;
     text-decoration: none;
+}
+#customers a:hover {
+    text-decoration: underline;
 }
 #customers > div > * {
     margin: 10px 0px;
@@ -201,6 +223,55 @@ nav ul li:last-child {
 }
 .customers_logo > * {
     height: 100px;
+}
+
+
+/* ################################# */
+/* ####### OPTIONER SELECTOR ####### */
+/* ################################# */
+#optioner {
+    height: auto;
+    padding: 50px 0px;
+}
+
+.optioner_div1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.optioner_div1 h2 {
+    color: #031c4e;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.optioner_div1 p {
+    color: #5c6a88;
+}
+
+.optioner_div2 > div:last-child h3 {
+    color: #031c4e;
+    margin: 10px 0px;
+}
+.optioner_div2 > div:last-child p {
+    color: #5c6a88;
+}
+.optioner_div2 > div:last-child {
+    width: 70%;
+}
+.optioner_div2 > div:last-child > div {
+    flex: 40%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.optioner_div2 > div:first-child ul li {
+    border-left: 2px solid #dadada;
+    padding: 10px 10px;
+    color: #8e97ad;
+    display: block;
+}
+.optioner_div2 > div:first-child {
+    width: 40%;
+    margin-bottom: 50px;
 }
 
 /* ############################## */
@@ -224,6 +295,38 @@ nav ul li:last-child {
         color: #2285fd;
         font-size: 1.5rem;
     }
+
+    /* ##### HERO SMARTPHONE ##### */
+    .hero_left {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .hero_right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+     #hero h1 {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+
+    /* ##### CUSTOMERS SMARTPHONE ##### */
+    .customers_logo > * {
+        height: 80px;
+        flex: 50%;
+    }
+
+    /* ##### OPTIONER SMARTPHONE ##### */
+    .optioner_div2 {
+        display: block;
+    }
+    .optioner_div2 > div:last-child {
+        display: block;
+        flex-wrap: nowrap;
+    }
 }
 
 /* ##### M - TABLET ##### */
@@ -244,17 +347,31 @@ nav ul li:last-child {
         font-size: 1.5rem;
     }
 
+    /* ##### HERO TABLET ##### */
     #hero {
         height: auto;
         padding: 50px 0px;
     }
 
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 2.5rem;
     }
     #hero p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.6em;
+    }
+    .hero_left {
+        width: 55%;
+        padding-right: 0px;
+    }
+    .hero_right {
+        width: 45%;
+        padding-left: 25px;
+    }
+
+    /* ##### CUSTOMERS TABLET ##### */
+    .customers_logo > * {
+        height: 60px;
     }
 }
